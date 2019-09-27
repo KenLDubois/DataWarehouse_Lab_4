@@ -11,8 +11,8 @@
   DTS:LocaleID="4105"
   DTS:ObjectName="01-01-Students-Extract"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{E42ABD96-DF59-4F30-8899-919F10657B90}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{4E63BB45-C20B-417D-8B9D-CBD0EF96A23A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -996,16 +996,6 @@
                       dataType="wstr"
                       length="256"
                       name="createdBy" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[lastEditedOn]"
-                      dataType="dbTimeStamp2"
-                      name="lastEditedOn"
-                      scale="7" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[lastEditedBy]"
-                      dataType="wstr"
-                      length="256"
-                      name="lastEditedBy" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1415,23 +1405,23 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158,42"
+          Size="158.4,41.6"
           Id="Package\DFT Extract Data"
           TopLeft="63.9999974568685,131.040001041412" />
         <NodeLayout
-          Size="150,42"
+          Size="150.4,41.6"
           Id="Package\SQL Audit End"
           TopLeft="68.6666639380986,221.546667619917" />
         <NodeLayout
-          Size="150,42"
+          Size="150.4,41.6"
           Id="Package\SQL Audit Start"
           TopLeft="327.333320326276,46.4533337025113" />
         <NodeLayout
-          Size="197,42"
+          Size="196.8,41.6"
           Id="Package\SQL Count Staging Rows"
           TopLeft="283.333322074679,133.120001057943" />
         <NodeLayout
-          Size="172,42"
+          Size="172,41.6"
           Id="Package\SQL Truncate Table"
           TopLeft="67.3333306577471,54.0800004297893" />
         <EdgeLayout
@@ -1555,69 +1545,25 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
-          Id="Package\DFT Extract Data\OLE DB Destination"
-          TopLeft="467.333314763176,76.9600006116231" />
-        <NodeLayout
-          Size="130,42"
+          Size="129.6,41.6"
           Id="Package\DFT Extract Data\Row Count"
           TopLeft="130.66666147444,181.653334776984" />
         <NodeLayout
-          Size="129,42"
+          Size="128.8,41.6"
           Id="Package\DFT Extract Data\RC Extract"
           TopLeft="310.666654321883,76.9600006116231" />
         <NodeLayout
-          Size="122,42"
+          Size="152,41.6"
+          Id="Package\DFT Extract Data\OLE DB Source"
+          TopLeft="133.333328035143,75.5733339339363" />
+        <NodeLayout
+          Size="121.6,41.6"
           Id="Package\DFT Extract Data\FF Errors"
           TopLeft="315.999987443289,176.106668066237" />
         <NodeLayout
-          Size="152,42"
-          Id="Package\DFT Extract Data\OLE DB Source"
-          TopLeft="133.333328035143,75.5733339339363" />
-        <EdgeLayout
-          Id="Package\DFT Extract Data.Paths[Row Count Output 1]"
-          TopLeft="439.466654321883,97.7600006116231">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="27.8666604412928,0"
-              Start="0,0"
-              End="20.3666604412928,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="20.3666604412928,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT Extract Data.Paths[OLE DB Source Output]"
-          TopLeft="285.333328035143,97.0666672727797">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="25.33332628674,0"
-              Start="0,0"
-              End="17.83332628674,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="17.83332628674,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="171.2,41.6"
+          Id="Package\DFT Extract Data\OLE DB Destination"
+          TopLeft="467.333314763176,76.9600006116231" />
         <EdgeLayout
           Id="Package\DFT Extract Data.Paths[OLE DB Destination Error Output]"
           TopLeft="552.933314763176,118.560000611623">
@@ -1676,11 +1622,55 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT Extract Data.Paths[Row Count Output 1]"
+          TopLeft="439.466654321883,97.7600006116231">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.8666604412928,0"
+              Start="0,0"
+              End="20.3666604412928,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="20.3666604412928,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT Extract Data.Paths[OLE DB Source Output]"
+          TopLeft="285.333328035143,97.0666672727797">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.33332628674,0"
+              Start="0,0"
+              End="17.83332628674,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="17.83332628674,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT Extract Data\OLE DB Source">
+    design-time-name="Package\DFT Extract Data\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1688,7 +1678,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT Extract Data\OLE DB Destination">
+    design-time-name="Package\DFT Extract Data\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

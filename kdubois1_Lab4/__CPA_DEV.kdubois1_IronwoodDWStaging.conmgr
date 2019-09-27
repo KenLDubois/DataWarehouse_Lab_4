@@ -5,10 +5,6 @@
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=192.168.40.206;User ID=kdubois1;Initial Catalog=kdubois1_IronwoodDWStaging;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-      <DTS:Password
-        DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+7xfSPFd7ESArEUgVR1ATAAAAAACAAAAAAADZgAAwAAAABAAAADJHusY1eGdeRxeWaJmlZ1IAAAAAASAAACgAAAAEAAAAPznH3ev/fS6cgwkZgVUdmN4AAAAZ2Z/PK/ExXClAhtLfQUMekranzPTO9hM0OvU9BjTBK6aAIyyY4SVq0lOo3bPI6NCZlBAE+iNfZzCZbONzG835JVoAmxUtaIOSGRQ+ayhnYay6QoHsQRrMRuv3zt0B6Tf6cAE3n+IoLZ3xoC5u+fVQDocuPkKk73dFAAAAKXrMSf2MwJk9admsQFhXBqsdiFy</DTS:Password>
-    </DTS:ConnectionManager>
+      DTS:ConnectionString="Data Source=.\CPA_DEV;Initial Catalog=kdubois1_IronwoodDWStaging;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
