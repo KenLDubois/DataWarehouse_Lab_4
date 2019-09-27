@@ -11,8 +11,8 @@
   DTS:LocaleID="4105"
   DTS:ObjectName="01-06-Enrollment-Extract"
   DTS:PackageType="5"
-  DTS:VersionBuild="37"
-  DTS:VersionGUID="{5DCA0075-431D-470E-B161-4118AAE6034D}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{843F366F-9DB8-4978-9AC6-E0783887D4AC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -703,7 +703,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <ExpressionTask
-          Expression="@[User::ExtractSQL] =  &#xA;&#x9;@[$Project::isInitialLoad] ?  @[User::ExtractSQL] :  &#xA;&#x9;@[User::ExtractSQL] + &quot; WHERE lastEditedOn &gt; '&quot; + (DT_WSTR, 50)(DT_DBTIMESTAMP)  @[User::MaxDateTime] + &quot;'&quot;" />
+          Expression="@[User::ExtractSQL] = @[$Project::isInitialLoad] ?  @[User::ExtractSQL] + &quot; WHERE EnrollmentGrade IS NOT NULL&quot;&#xA;:  &#xA;&#x9;@[User::ExtractSQL] + &quot; WHERE lastEditedOn &gt; '&quot; + (DT_WSTR, 50)(DT_DBTIMESTAMP)  @[User::MaxDateTime] + &quot;' AND EnrollmentGrade IS NOT NULL&quot;" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1164,25 +1164,25 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\DFT Extract Data\Row Count"
-          TopLeft="130.66666147444,181.653334776984" />
+          Size="121.6,41.6"
+          Id="Package\DFT Extract Data\FF Errors"
+          TopLeft="315.999987443289,176.106668066237" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\DFT Extract Data\OLE DB Source"
           TopLeft="133.333328035143,75.5733339339363" />
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\DFT Extract Data\OLE DB Destination"
-          TopLeft="467.333314763176,76.9600006116231" />
+          Size="129.6,41.6"
+          Id="Package\DFT Extract Data\Row Count"
+          TopLeft="130.66666147444,181.653334776984" />
         <NodeLayout
           Size="128.8,41.6"
           Id="Package\DFT Extract Data\RC Extract"
           TopLeft="310.666654321883,76.9600006116231" />
         <NodeLayout
-          Size="121.6,41.6"
-          Id="Package\DFT Extract Data\FF Errors"
-          TopLeft="315.999987443289,176.106668066237" />
+          Size="171.2,41.6"
+          Id="Package\DFT Extract Data\OLE DB Destination"
+          TopLeft="467.333314763176,76.9600006116231" />
         <EdgeLayout
           Id="Package\DFT Extract Data.Paths[Row Count Output 11]"
           TopLeft="260.26666147444,199.680001421611">
