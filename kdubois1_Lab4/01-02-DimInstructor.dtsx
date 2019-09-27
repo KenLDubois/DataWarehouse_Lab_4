@@ -1,18 +1,18 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="9/24/2019 8:32:22 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="KEN-LAPTOP"
   DTS:CreatorName="KEN-LAPTOP\kenld"
-  DTS:DTSID="{5DC5A000-8131-4534-9A54-5A856FB6B552}"
+  DTS:DTSID="{3DDA289C-C51B-45E3-A088-8726A8D501F0}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.1301.433"
   DTS:LocaleID="4105"
   DTS:ObjectName="01-01-Students-Extract"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{4E63BB45-C20B-417D-8B9D-CBD0EF96A23A}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{004C736D-1577-47A6-95FC-9129D3F2A8A4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -20,7 +20,7 @@
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
       DTS:Description="FF Errors Conn"
-      DTS:DTSID="{CE378FBE-1CD9-4E6C-B946-0AB1B22EA53A}"
+      DTS:DTSID="{96BC548E-72FA-4BF6-83E1-E6315FF57B9D}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">"C:\\SSIS_Errors\\" +  @[User::DestTable] + "_Errors.txt"</DTS:PropertyExpression>
@@ -41,7 +41,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentID"
-              DTS:DTSID="{B5FCB8A7-BE65-40D1-876D-EE3FD7A37D72}"
+              DTS:DTSID="{1703E6C3-269E-46FB-92DE-E9D8A84F73E3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentFirstName"
-              DTS:DTSID="{78C9BE41-ABB2-4417-A686-B91E4A5C82BE}"
+              DTS:DTSID="{3D7D2ACE-807F-4B73-AC70-360F2B863B7D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentLastName"
-              DTS:DTSID="{E462E5F7-D1DE-495B-87F4-DFD5DD8C5F3A}"
+              DTS:DTSID="{309D509B-7B00-4A95-94E8-F07CF33A58CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +67,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentDOB"
-              DTS:DTSID="{D916C1E7-CFA5-45D4-81A6-F4464C3A07A1}"
+              DTS:DTSID="{B8DE242E-E030-4D2B-BC60-6A2495D992C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,24 +76,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentGender"
-              DTS:DTSID="{B003571E-5736-41DF-96F9-B434CEBABFCD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="30"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="StudentImagefile"
-              DTS:DTSID="{DE2CF029-D88F-445C-B001-12698E4E4DB0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="301"
-              DTS:TextQualified="True"
-              DTS:ObjectName="StudentImage"
-              DTS:DTSID="{7E4951AE-3B53-4F42-A7B8-532703BB414E}"
+              DTS:DTSID="{97E445D5-6B34-4CB7-8CF7-B3B5B02DB39E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +85,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentAddress"
-              DTS:DTSID="{22C47E0C-6F9A-4C78-A836-1D3DB3850902}"
+              DTS:DTSID="{EB8B1465-575C-4611-8A71-0C7D1D711EBA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,16 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentCity"
-              DTS:DTSID="{C99BE372-1DF2-4092-B037-EB7B1B9D082A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="2"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="StateAbbreviation"
-              DTS:DTSID="{25F3F9BD-208D-4BFF-A1FF-B7B4CF92FFDF}"
+              DTS:DTSID="{E3A7BD20-3420-4261-B497-77ADE6FE86A6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentPostalCode"
-              DTS:DTSID="{4B20039C-1AE8-4409-8420-4A6ED1B882C1}"
+              DTS:DTSID="{A44A910B-F5DE-4EEA-BB89-BDC935D2FCFA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +112,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StudentPhoneNumber"
-              DTS:DTSID="{155798EB-DC17-466B-AD96-0B727B3C0C1A}"
+              DTS:DTSID="{BD07DC36-8C60-4E9D-BD88-ED406473F918}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StateAbbreviation"
+              DTS:DTSID="{3C9CF243-EF50-4CED-A6B4-A32DF8BBEC0D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -146,7 +129,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{90C12E74-D3D8-453E-857A-CAC5C1933E20}"
+              DTS:DTSID="{9D73EF9C-5B90-46DB-9890-A0571BF9C3A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -154,7 +137,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{BEAFAF06-2946-4012-89F5-DE5419911AF2}"
+              DTS:DTSID="{C32A3CBA-182A-41CA-A733-282FCFEF1082}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -165,7 +148,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="3"
-      DTS:DTSID="{B496B3F1-AFE4-47DE-967B-6DCD81BB9441}"
+      DTS:DTSID="{BF741FED-30C6-48D7-989D-98C4F7F06551}"
       DTS:ObjectName="ParentAuditKeyParam">
       <DTS:Property
         DTS:DataType="3"
@@ -175,7 +158,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{4B163C15-3042-47C7-AD16-148498903C69}"
+      DTS:DTSID="{491B82EF-CAA0-4CBE-85B3-8C458D2DAA91}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="AuditKey">
@@ -184,7 +167,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{FBD7D520-D1B0-4E6F-B94F-90927860CC99}"
+      DTS:DTSID="{26885C18-46CE-4BF2-8D0B-7A4634AF869E}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="DestTable">
@@ -193,7 +176,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{223DD288-7A40-4505-907E-A5E76FA0DC28}"
+      DTS:DTSID="{43E78BF1-A3DA-4BAB-A91B-D7F178E23B6A}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="ErrorCount">
@@ -202,7 +185,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{ADFD084D-4830-4497-851B-BE9FAA100381}"
+      DTS:DTSID="{D2E9E290-550A-4972-9AD2-8DD5E3089980}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="ExtractRowCount">
@@ -211,7 +194,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{535C26E8-5758-469B-9195-79DE573016AA}"
+      DTS:DTSID="{BCA5FF1F-18E7-4241-854D-634C40CC3FBF}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Package::ParentAuditKeyParam]"
       DTS:IncludeInDebugDump="2345"
@@ -222,7 +205,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6D47AC95-FD8A-44AF-AFF8-0126B4FA04C7}"
+      DTS:DTSID="{6AEF11F6-D941-4376-BDED-9BEDCA226816}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RowCount">
@@ -231,7 +214,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0A76139A-4406-4EC8-B922-12FFA70F2D42}"
+      DTS:DTSID="{288EFEBD-9822-42C5-85CC-4567F139A346}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SourceTable">
@@ -240,7 +223,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{CA512BD9-97CD-44BB-80B0-C8E6F8A85AD3}"
+      DTS:DTSID="{B97777A4-8C2C-4706-BD22-C268201793E8}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="TableFinalCount">
@@ -253,7 +236,7 @@
       DTS:refId="Package\DFT Extract Data"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{350CF13C-9252-4FD5-A2C9-3FC7FDF5CC43}"
+      DTS:DTSID="{5B5D22B8-BB26-406A-B593-E0999E07E6C8}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="DFT Extract Data"
@@ -453,16 +436,6 @@
                       refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
                       dataType="i4"
                       name="ErrorColumn" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentImagefile]"
-                      codePage="1252"
-                      dataType="str"
-                      length="30"
-                      name="StudentImagefile" />
-                    <externalMetadataColumn
-                      refId="Package\DFT Extract Data\FF Errors.Inputs[Flat File Destination Input].ExternalColumns[StudentImage]"
-                      dataType="image"
-                      name="StudentImage" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -996,6 +969,16 @@
                       dataType="wstr"
                       length="256"
                       name="createdBy" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[lastEditedOn]"
+                      dataType="dbTimeStamp2"
+                      name="lastEditedOn"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Extract Data\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[lastEditedBy]"
+                      dataType="wstr"
+                      length="256"
+                      name="lastEditedBy" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1186,7 +1169,7 @@
       DTS:refId="Package\SQL Audit End"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{3273efef-0d2e-4faf-a923-0979fc44d00e}"
+      DTS:DTSID="{12B55117-459B-45DE-8552-3B6F339E3D17}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL Audit End"
@@ -1227,7 +1210,7 @@
       DTS:refId="Package\SQL Audit Start"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{94015C3D-0740-47F7-8B9D-637923719E27}"
+      DTS:DTSID="{61CE3354-4098-4DC9-9E2F-FB665C4B8D64}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL Audit Start"
@@ -1320,7 +1303,7 @@
       DTS:refId="Package\SQL Count Staging Rows"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{D705B54D-46D1-4351-A7B6-385C16EB1AAB}"
+      DTS:DTSID="{A562F566-1A52-4B9E-9DA8-CC391D3D2B15}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL Count Staging Rows"
@@ -1343,7 +1326,7 @@
       DTS:refId="Package\SQL Truncate Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{64B4D0CB-1BD7-49ED-B486-8C5BA9D7BF47}"
+      DTS:DTSID="{E4D352A2-E89B-4E43-9763-1C650E61B7E4}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL Truncate Table"
@@ -1362,7 +1345,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{32F28533-9B2E-4E28-981A-21872AF6321B}"
+      DTS:DTSID="{B1257A06-F853-476F-8A75-6DFDD3DCECAA}"
       DTS:From="Package\SQL Truncate Table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -1370,7 +1353,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{99AD3F1F-B7C3-4E02-9320-83ABDA440453}"
+      DTS:DTSID="{9B4E39AB-EF8F-4986-ACB5-5CD486C45C0C}"
       DTS:From="Package\SQL Audit Start"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -1378,7 +1361,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{D74F4216-D195-4AA5-8C77-2E8F2FC4F1C0}"
+      DTS:DTSID="{6B8ED4FE-EC2E-4CC1-B96E-94B5D3C036CF}"
       DTS:From="Package\DFT Extract Data"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
@@ -1386,7 +1369,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{A57A680E-E976-4841-BA61-C8AFC1E31148}"
+      DTS:DTSID="{6B63F349-5269-4CB1-90A0-7F7EA95E94B9}"
       DTS:From="Package\SQL Count Staging Rows"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
@@ -1405,23 +1388,23 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158.4,41.6"
+          Size="158,42"
           Id="Package\DFT Extract Data"
           TopLeft="63.9999974568685,131.040001041412" />
         <NodeLayout
-          Size="150.4,41.6"
+          Size="150,42"
           Id="Package\SQL Audit End"
           TopLeft="68.6666639380986,221.546667619917" />
         <NodeLayout
-          Size="150.4,41.6"
+          Size="150,42"
           Id="Package\SQL Audit Start"
           TopLeft="327.333320326276,46.4533337025113" />
         <NodeLayout
-          Size="196.8,41.6"
+          Size="197,42"
           Id="Package\SQL Count Staging Rows"
           TopLeft="283.333322074679,133.120001057943" />
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\SQL Truncate Table"
           TopLeft="67.3333306577471,54.0800004297893" />
         <EdgeLayout
@@ -1545,25 +1528,47 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="129.6,41.6"
+          Size="171,42"
+          Id="Package\DFT Extract Data\OLE DB Destination"
+          TopLeft="467.333314763176,76.9600006116231" />
+        <NodeLayout
+          Size="130,42"
           Id="Package\DFT Extract Data\Row Count"
           TopLeft="130.66666147444,181.653334776984" />
         <NodeLayout
-          Size="128.8,41.6"
+          Size="129,42"
           Id="Package\DFT Extract Data\RC Extract"
           TopLeft="310.666654321883,76.9600006116231" />
         <NodeLayout
-          Size="152,41.6"
-          Id="Package\DFT Extract Data\OLE DB Source"
-          TopLeft="133.333328035143,75.5733339339363" />
-        <NodeLayout
-          Size="121.6,41.6"
+          Size="122,42"
           Id="Package\DFT Extract Data\FF Errors"
           TopLeft="315.999987443289,176.106668066237" />
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\DFT Extract Data\OLE DB Destination"
-          TopLeft="467.333314763176,76.9600006116231" />
+          Size="152,42"
+          Id="Package\DFT Extract Data\OLE DB Source"
+          TopLeft="133.333328035143,75.5733339339363" />
+        <EdgeLayout
+          Id="Package\DFT Extract Data.Paths[OLE DB Source Output]"
+          TopLeft="285.333328035143,97.0666672727797">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.33332628674,0"
+              Start="0,0"
+              End="17.83332628674,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="17.83332628674,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT Extract Data.Paths[OLE DB Destination Error Output]"
           TopLeft="552.933314763176,118.560000611623">
@@ -1644,33 +1649,11 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT Extract Data.Paths[OLE DB Source Output]"
-          TopLeft="285.333328035143,97.0666672727797">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="25.33332628674,0"
-              Start="0,0"
-              End="17.83332628674,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="17.83332628674,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT Extract Data\OLE DB Destination">
+    design-time-name="Package\DFT Extract Data\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1678,7 +1661,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT Extract Data\OLE DB Source">
+    design-time-name="Package\DFT Extract Data\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
